@@ -14,7 +14,7 @@ model = ChatHuggingFace(llm=llm)
 
 # Prompt template
 template = PromptTemplate(
-    template="{input} Limit to 3 sentences.",
+    template="{input}",
     input_variables=["input"]
 )
 

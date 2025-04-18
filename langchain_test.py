@@ -21,7 +21,7 @@ st.header("Chat")
 
 template = PromptTemplate(template=
 
-"{input} Limit to 3 sentences."                                               
+"{input}"                                               
 ,
 input_variables=["input"])
 
