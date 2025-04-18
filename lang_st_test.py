@@ -1,11 +1,9 @@
 from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 from langchain_core.prompts import PromptTemplate
 import streamlit as st
-from dotenv import load_dotenv
-import os
 
-load_dotenv()
-api_token= os.getenv("API_TOKEN")
+
+api_token = st.secrets["API_TOKEN"]
 llm = HuggingFaceEndpoint(
     repo_id="TinyLlama/TinyLlama-1.1B-Chat-v1.0",
     huggingfacehub_api_token=api_token,
